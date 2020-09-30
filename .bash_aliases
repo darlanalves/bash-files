@@ -1,15 +1,4 @@
-export JAVA_HOME=$(/usr/libexec/java_home)
-export JAVA_BIN="$JAVA_HOME/bin"
-export M2_HOME=/path/to/maven
-export M2="$M2_HOME/bin"
-export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
-
-SUBL="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
-
-export NVM_DIR="$HOME/.nvm"
-source "$(brew --prefix nvm)/nvm.sh"
-
-export PATH="./node_modules/.bin:$PATH:$JAVA_BIN:$M2:$SUBL"
+export PATH="./node_modules/.bin:$PATH"
 
 # enable colors on ls command
 export CLICOLOR=1
